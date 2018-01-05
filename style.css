@@ -135,7 +135,7 @@ span {
 */
 
 .socialemedier img {
-    margin-top: 80px;
+    margin-top: 50px;
     width: 20%;
     height: auto;
 }
@@ -306,13 +306,11 @@ a:hover {
 /*********************** STILARTSITE ************************/
 
 @media screen and (min-width: 1024px) {
-    #stilartsite1,
-    #stilartsite2 {
+    #template1 {
         width: 70vw;
     }
 
-    #stilartsite1 .sectionwrapper,
-    #stilartsite2 .sectionwrapper {
+    #template1 .sectionwrapper {
         display: flex;
         flex-wrap: wrap;
         width: 60%;
@@ -320,8 +318,7 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-    #stilartsite1,
-    #stilartsite2 {
+    #template1 {
         width: 90vw;
         padding-top: 40px;
         display: block;
@@ -330,8 +327,7 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-    #stilartsite1 .sectionwrapper,
-    #stilartsite2 .sectionwrapper {
+    #template1 .sectionwrapper {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -339,20 +335,18 @@ a:hover {
 }
 
 
-#stilartsite1 .column,
-#stilartsite2 .column {
+#template1 .column {
     flex-basis: 200px;
     flex-grow: 1;
 }
 
-#stilartsite1 img,
-#stilartsite2 img {
+#template1 img {
     /*    margin: 0 auto;*/
     width: 100%;
     margin-top: 10px;
 }
 
-#stilartsite3 img {
+#template2 img {
     /*    margin: 0 auto;*/
     width: 50%;
     margin-top: 10px;
