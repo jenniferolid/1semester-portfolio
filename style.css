@@ -9,6 +9,21 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+span {
+    font-weight: 400;
+    font-size: 1em;
+}
+
 /*********************** NAV ***************************/
 
 .overskrift {
@@ -117,9 +132,12 @@ h1 {
     .vertical_menu {
         display: none;
     }
+    .burgermenu {
+        display: block;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     .burgermenu {
         display: none;
     }
@@ -222,7 +240,8 @@ h1 {
         height: 595px;
         width: 1040px;
         display: block;
-        padding: 70px 0px 0px 350px;
+        padding-top: 80px;
+        padding-left: 350px;
     }
 }
 
@@ -236,8 +255,71 @@ h1 {
     }
 }
 
+a:hover {
+    opacity: 0.5;
+}
+
+.previous {
+    color: #e0137b;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 3em;
+    font-family: open sans;
+    float: right;
+}
+
+.next {
+    color: #e0137b;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 3em;
+    font-family: open sans;
+    float: right;
+}
+
 /*********************** CONTENT SKÆRM SLUT ************************/
 
 /*********************** STILARTSITE ************************/
 
-.stilart_img {}
+@media screen and (min-width: 1024px) {
+    #stilartsite1 {
+        width: 70vw;
+    }
+
+    #stilartsite1 .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #stilartsite1 {
+        width: 90vw;
+        padding-top: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #stilartsite1 .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+
+#stilartsite1 .column {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#stilartsite1 img {
+    /*    margin: 0 auto;*/
+    width: 100%;
+    margin-top: 10px;
+}
