@@ -1,0 +1,87 @@
+* body {
+    font-family: open sans;
+    margin: 0px;
+}
+
+/*********************** NAV ***************************/
+
+.vertical_menu {
+    width: 300px;
+    height: 80%;
+    margin-top: 65px;
+    position: fixed;
+    border-right-style: solid;
+    border-right-color: #e0137b;
+    border-right-width: 1px;
+}
+
+.vertical_menu a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #e0137b;
+    font-style: italic;
+
+}
+
+.vertical_menu a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    padding-bottom: 20px;
+    font-weight: 800;
+    font-size: 1.7em;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+
+.logo_div {
+    padding: 20px 0 20px 0;
+    font-weight: 800;
+    font-size: 1.7em;
+
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    background: #e0137b;
+}
+
+.nav_opgaver {
+    font-weight: 400;
+    padding: 5px 0 5px 0;
+}
+
+.nav_opgaver_last {
+    font-weight: 400;
+    padding: 5px 0 20px 0;
+}
+
+
+.socialemedier {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*
+.socialemedier a {
+    width: 50%;
+    height: auto;
+}
+*/
+
+.socialemedier img {
+    margin-top: 80px;
+    width: 20%;
+    height: auto;
+}
+
+
+/*********************** NAV SLUT***************************/
