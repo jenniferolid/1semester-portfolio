@@ -57,37 +57,37 @@
     </header>
 
     <div id="content">
-        <section id="template1">
-            <h1>THE LAST BUTCHER SHOP - REDESIGN</h1>
-            <div class="sectionwrapper">
-                <div class="column">
-                    <img src="0001.img/butchershop7_mockup.png" alt="thelastbuthershop mockup">
-                </div>
-                <div class="column"><img src="0001.img/butchershop3_mockup.png" alt="thelastbuthershop mockup"></div>
-            </div>
-            <span class="billedetekst">Virksomhedens eget webshop og vores redesign.</span>
-            <p><span>Løsningen</span><br> Min anden rolle var at lave produktsiderne for webshoppen.
-                <br> Virksomhedens eget webshop fungerede allerede godt og vi holdt os derfor meget tæt på deres eget site.
-                <br> Da vi på dette tidspunkt ikke havde lært JavaScript, havde jeg et problem med at sammensætte et billede slideshow, som viste de forskellige billeder af det valgte produkt. Jeg lavede derfor en video slideshow, som er embedet i siden.
+        <section id="template2">
+            <h1>MØRKET - ANIMATION</h1>
+            <p><span>Refleksion</span><br> Under hele kodningsprocessen var jeg stadig i gang med at rentegne mine spritesheets. Det vil sige jeg var bagud. Dette førte til at jeg overså, at historien skulle have genstande, som pulsede, hvoraf man som spillere skal klikke på et bestemt antal inden tiden løb ud. Min historie er lidt anderledes.
             </p>
-            <p><span>Refleksion</span><br> Vores redesign minder lidt for meget om virksomhedens eget website. Dog var gruppens mål at skabe et rødt tråd mellem websitet og webshoppen. Dette lykkedes. Alt i alt har vi skabt et website, som passer til virksomhedens profil.
+            <p>Min karakterer begynder at pulse, når variablen falder på selve spillet. Spilleren skal derfor klikke på Drengen et bestemt antal gange for at få ham til at løbe helt væk fra skærmen og væk fra Monstret.
+                <br> Jeg har kodet Drengen til at løbe 2 px til højre for hvert klik. I alt 50 klik for at få ham helt væk fra skærmen. Mit problem ligger derfor på, at når skærmen ændrer størrelse er spillet ubrugelig.
+
+            </p><br>
+            <p>En af de andre udfordringer, jeg ramte var, at så snart der er noget i forgrunden som har et større z-index end mit karakter, var det ikke muligt at klikke. Derfor har jeg lavet en “gennemsigtig” container, som ligger ovenpå Drengen og forgrunden. Det er denne container, man i princippet klikker på.
             </p>
+            <p>Alt i alt, er jeg utrolig stolt over det færdige resultat.
+
+            </p>
+            <p><span>Klik på billedet for at spille det færdige spil.
 
 
+                </span></p>
 
+            <div class="column"><a target="_blank" href="http://jenniferolid.dk/kea/02-animation/020304/"><img src="0001.img/moerket_splash.png" alt="stilartsite splash"></a></div>
         </section>
-
     </div>
 
-
-    <footer class="footer">
-        <h3>3/5</h3>
-        <a href="lastbutchershop_2.html" class="previous">&#8249;</a>
-        <a href="lastbutchershop_4.html" class="next">&#8250;</a>
+    <footer>
+        <h3>5/5</h3>
+        <a href="moerket_4.html" class="previous_lastpage">&#8249;</a>
+        <!--        <a href="stilartsite_3.html" class="next">&#8250;</a>-->
     </footer>
 
     <script src="script.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 </body>
 
 </html>
