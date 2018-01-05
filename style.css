@@ -259,8 +259,10 @@ span {
 
 @media screen and (max-width: 1024px) {
     #content {
+        /*
         height: 100vw;
         width: 100vw;
+*/
         margin: 0 auto;
         display: block;
         padding: 10px 0px 0px 0px;
@@ -305,15 +307,23 @@ a:hover {
 
 /*********************** STILARTSITE ************************/
 
-@media screen and (min-width: 1024px) {
-    #template1 {
+@media screen and (min-width: 1025px) {
+    #template1,
+    #template2 {
         width: 70vw;
     }
+
 
     #template1 .sectionwrapper {
         display: flex;
         flex-wrap: wrap;
         width: 60%;
+    }
+
+    #template2 img {
+        /*    margin: 0 auto;*/
+        width: 50%;
+        margin-top: 10px;
     }
 }
 
@@ -323,6 +333,13 @@ a:hover {
         padding-top: 40px;
         display: block;
         margin: 0 auto;
+    }
+
+    #template2 img {
+        /*    margin: 0 auto;*/
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 5px;
     }
 }
 
@@ -343,12 +360,6 @@ a:hover {
 #template1 img {
     /*    margin: 0 auto;*/
     width: 100%;
-    margin-top: 10px;
-}
-
-#template2 img {
-    /*    margin: 0 auto;*/
-    width: 50%;
     margin-top: 10px;
 }
 
