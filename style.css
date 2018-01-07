@@ -309,15 +309,24 @@ a:hover {
 
 @media screen and (min-width: 1025px) {
     #template1,
-    #template2 {
+    #template2,
+    #template3,
+    #template4 {
         width: 70vw;
     }
 
 
-    #template1 .sectionwrapper {
+    #template1 .sectionwrapper,
+    #template3 .sectionwrapper {
         display: flex;
         flex-wrap: wrap;
         width: 60%;
+    }
+
+    #template4 .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     #template2 img {
@@ -328,7 +337,9 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-    #template1 {
+    #template1,
+    #template3,
+    #template4 {
         width: 90vw;
         padding-top: 40px;
         display: block;
@@ -344,7 +355,9 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-    #template1 .sectionwrapper {
+    #template1 .sectionwrapper,
+    #template3 .sectionwrapper,
+    #template4 .sectionwrapper {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -352,15 +365,44 @@ a:hover {
 }
 
 
-#template1 .column {
+#template1 .column,
+#template3 .column {
     flex-basis: 200px;
     flex-grow: 1;
 }
 
-#template1 img {
+#template1 img,
+#template3 img {
     /*    margin: 0 auto;*/
     width: 100%;
     margin-top: 10px;
+}
+
+#template3 .column p,
+#template3 .column ul {
+    margin-left: 20px;
+}
+
+#template4 img {
+    width: 98.5%;
+    transition: .5s ease;
+}
+
+.row {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
 }
 
 /*********************** FOOTER START ************************/
