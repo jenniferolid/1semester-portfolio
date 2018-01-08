@@ -18,7 +18,7 @@ h2 {
 p,
 ul {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 span {
@@ -157,7 +157,7 @@ td {
 */
 
 .socialemedier img {
-    margin-top: 50px;
+    margin-top: 70px;
     width: 20%;
     height: auto;
 }
@@ -297,35 +297,6 @@ td {
     opacity: 0.5;
 }
 
-.previous {
-    color: #e0137b;
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px 0 0;
-    font-size: 3em;
-    font-family: open sans;
-    float: right;
-}
-
-.next {
-    color: #e0137b;
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 100px 0 0;
-    font-size: 3em;
-    font-family: open sans;
-    float: right;
-}
-
-.previous_lastpage {
-    color: #e0137b;
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 100px 0 0;
-    font-size: 3em;
-    font-family: open sans;
-    float: right;
-}
 
 /**************** CONTENT SKÆRM SLUT *******************/
 
@@ -368,6 +339,7 @@ td {
 
 @media screen and (max-width: 1024px) {
     #template1,
+    #template2,
     #template3,
     #template4,
     #template5 {
@@ -535,6 +507,59 @@ table {
 /********* PORTFOLIO SLUT *********/
 
 /************** FOOTER START ***************/
+
+.previous {
+    color: #e0137b;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 2vw 0 0;
+    font-size: 3em;
+    font-family: open sans;
+    float: right;
+}
+
+.next {
+    color: #e0137b;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 5vw 0 0;
+    font-size: 3em;
+    font-family: open sans;
+    float: right;
+}
+
+.previous_lastpage {
+    color: #e0137b;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 8vw 0 0;
+    font-size: 3em;
+    font-family: open sans;
+    float: right;
+}
+
+@media screen and (max-width: 1024px) {
+    .previous {
+        padding: 8px 5vw 0 0;
+    }
+
+    .previous_lastpage {
+        padding: 8px 11vw 0 0;
+    }
+
+}
+
+@media screen and (max-width: 667px) {
+    .previous {
+        padding: 8px 8vw 0 0;
+    }
+
+    .previous_lastpage {
+        padding: 8px 14vw 0 0;
+    }
+
+}
+
 
 footer {
     flex-wrap: nowrap;
