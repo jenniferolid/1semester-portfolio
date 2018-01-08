@@ -36,6 +36,28 @@ span {
     text-decoration: none;
 }
 
+td {
+    font-size: 0.8em;
+    font-weight: 300;
+    padding-bottom: 12px;
+}
+
+.info_tekst {
+    font-weight: 300;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.info_tekst2 {
+    font-weight: 300;
+    font-size: 0.8em;
+    /*    font-style: italic;*/
+}
+
+.cv_tekst {
+    font-weight: 400;
+}
+
 /*********************** NAV ***************************/
 
 .overskrift {
@@ -174,7 +196,7 @@ span {
 
 }
 
-/*********************** BURGERMENU ***************************/
+/********************* BURGERMENU ************************/
 
 .burgermenu span {
     text-align: center;
@@ -243,9 +265,9 @@ span {
 }
 
 
-/*********************** NAV SLUT ***************************/
+/******************** NAV SLUT ************************/
 
-/*********************** CONTENT SKÆRM START ************************/
+/************ CONTENT SKÆRM START *****************/
 
 @media screen and (min-width: 1024px) {
     #content {
@@ -269,7 +291,9 @@ span {
     }
 }
 
-a:hover {
+#template1 a:hover,
+#template2 a:hover,
+#template3 a:hover {
     opacity: 0.5;
 }
 
@@ -303,9 +327,9 @@ a:hover {
     float: right;
 }
 
-/*********************** CONTENT SKÆRM SLUT ************************/
+/**************** CONTENT SKÆRM SLUT *******************/
 
-/*********************** STILARTSITE ************************/
+/********* PORTFOLIO START *********/
 
 @media screen and (min-width: 1025px) {
     #template1,
@@ -329,6 +353,12 @@ a:hover {
         width: 100%;
     }
 
+    #template5 .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
     #template2 img {
         /*    margin: 0 auto;*/
         width: 50%;
@@ -339,7 +369,8 @@ a:hover {
 @media screen and (max-width: 1024px) {
     #template1,
     #template3,
-    #template4 {
+    #template4,
+    #template5 {
         width: 90vw;
         padding-top: 40px;
         display: block;
@@ -357,7 +388,8 @@ a:hover {
 @media screen and (max-width: 1024px) {
     #template1 .sectionwrapper,
     #template3 .sectionwrapper,
-    #template4 .sectionwrapper {
+    #template4 .sectionwrapper,
+    #template5 .sectionwrapper {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -371,6 +403,16 @@ a:hover {
     flex-grow: 1;
 }
 
+#template5 .column1 {
+    flex-basis: 240px;
+    flex-grow: 0;
+}
+
+#template5 .column2 {
+    flex-basis: 340px;
+    flex-grow: 2;
+}
+
 #template1 img,
 #template3 img {
     /*    margin: 0 auto;*/
@@ -382,6 +424,17 @@ a:hover {
 #template3 .column ul {
     margin-left: 20px;
 }
+
+#template5 img {
+    width: 80%;
+}
+
+#template5 p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+/********* INDEX GALLERI START *********/
 
 #template4 img {
     width: 98.5%;
@@ -430,13 +483,58 @@ a:hover {
     font-weight: 800;
     font-style: italic;
     font-family: open sans;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/*********************** FOOTER START ************************/
+/*
+#template5 h1 {
+    font-size: 1.5em;
+    color: #e0137b;
+    font-weight: 800;
+    font-style: italic;
+
+}
+*/
+
+table {
+    width: 80%;
+    /*
+    border-collapse: separate;
+    border-spacing: 5px;
+*/
+}
+
+.cv3 {
+    width: 30%;
+}
+
+@media screen and (max-width: 1018px) {
+    .cv3,
+    table {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .cv3,
+    table {
+        width: 100%;
+    }
+}
+
+#template5 li {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+
+/********* PORTFOLIO SLUT *********/
+
+/************** FOOTER START ***************/
 
 footer {
     flex-wrap: nowrap;
@@ -455,4 +553,4 @@ footer h3 {
     font-weight: 600;
 }
 
-/*********************** FOOTER SLUT ************************/
+/************** FOOTER SLUT **************/
